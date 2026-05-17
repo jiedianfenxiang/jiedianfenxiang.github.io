@@ -349,36 +349,6 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
     </div>
 <h4>FAQ</h4>
 <div class="panel panel-default">
-    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何配置？</h5></div>
-    <div class="panel-body">
-        用户可添加订阅 URL，Nekoray 会定期下载并替换旧节点。这样可保证节点列表始终最新，减少手动维护，提高使用效率，同时保证网络访问稳定可靠。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>VMess 协议的动态端口功能是什么？</h5></div>
-    <div class="panel-body">
-        VMess 支持动态端口（port hopping）功能，能在一定范围内自动变更通信端口。此机制可有效防止防火墙基于端口的封锁策略，提高节点长期稳定性。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hysteria2 多路复用如何优化高频短连接？</h5></div>
-    <div class="panel-body">
-        多路复用允许多个短连接共享同一通道，减少握手次数和加密开销。适合游戏和即时通讯等高频短连接场景，提高吞吐量和连接稳定性，保证流量快速传输。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
-    <div class="panel-body">
-        管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>Potatso Lite 显示证书错误，如何修复？</h5></div>
-    <div class="panel-body">
-        证书错误通常由域名与证书不匹配或证书链不完整引起。请检查服务器证书是否为有效域名签发并包含完整链，如果使用 Let's Encrypt，请确保证书未过期并已正确安装到反向代理或服务端。<hr />    </div>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading"><h5>如何在手机上减少代理应用对电量的消耗？</h5></div>
-    <div class="panel-body">
-        关闭不必要的后台代理连接，减少实时测速或心跳频率，启用省电模式并限制流量统计与日志记录；对于常用站点设置直连策略，避免所有流量都走代理带来的持续网络负荷。<hr />    </div>
-</div>
-<div class="panel panel-default">
     <div class="panel-heading"><h5>V2Ray 的 DNS 模块如何提升解析速度？</h5></div>
     <div class="panel-body">
         V2Ray 内置 DNS 模块支持并行解析，可同时请求多个上游 DNS 服务器。用户可配置本地优先解析或远程解析策略，从而减少域名污染与延迟问题。<hr />    </div>
@@ -394,9 +364,39 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
         Sing-box 可按端口设置流量分流规则，将游戏流量分配到低延迟节点。结合策略组使用，可保证游戏连接稳定，减少延迟和掉线，提高流畅度和网络体验。<hr />    </div>
 </div>
 <div class="panel panel-default">
+    <div class="panel-heading"><h5>如何在手机上减少代理应用对电量的消耗？</h5></div>
+    <div class="panel-body">
+        关闭不必要的后台代理连接，减少实时测速或心跳频率，启用省电模式并限制流量统计与日志记录；对于常用站点设置直连策略，避免所有流量都走代理带来的持续网络负荷。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hysteria2 多路复用如何优化高频短连接？</h5></div>
+    <div class="panel-body">
+        多路复用允许多个短连接共享同一通道，减少握手次数和加密开销。适合游戏和即时通讯等高频短连接场景，提高吞吐量和连接稳定性，保证流量快速传输。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Potatso Lite 显示证书错误，如何修复？</h5></div>
+    <div class="panel-body">
+        证书错误通常由域名与证书不匹配或证书链不完整引起。请检查服务器证书是否为有效域名签发并包含完整链，如果使用 Let's Encrypt，请确保证书未过期并已正确安装到反向代理或服务端。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>VMess 协议的动态端口功能是什么？</h5></div>
+    <div class="panel-body">
+        VMess 支持动态端口（port hopping）功能，能在一定范围内自动变更通信端口。此机制可有效防止防火墙基于端口的封锁策略，提高节点长期稳定性。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Hiddify Next 如何管理不同用户的带宽？</h5></div>
+    <div class="panel-body">
+        管理员可以为每个用户设置独立带宽限制和流量配额。超出配额时可自动阻断或降速，确保服务器资源合理分配，避免单用户占用过多带宽，保障整体网络体验。<hr />    </div>
+</div>
+<div class="panel panel-default">
     <div class="panel-heading"><h5>VMess 连接不稳定的常见原因有哪些？</h5></div>
     <div class="panel-body">
-        VMess 连接不稳定可能由节点延迟过高、服务器防火墙、TLS 配置错误或 ISP 丢包引起。建议测试不同传输协议（如 WS、gRPC）或切换节点，检查日志确认具体错误信息。    </div>
+        VMess 连接不稳定可能由节点延迟过高、服务器防火墙、TLS 配置错误或 ISP 丢包引起。建议测试不同传输协议（如 WS、gRPC）或切换节点，检查日志确认具体错误信息。<hr />    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading"><h5>Nekoray 节点订阅自动更新如何配置？</h5></div>
+    <div class="panel-body">
+        用户可添加订阅 URL，Nekoray 会定期下载并替换旧节点。这样可保证节点列表始终最新，减少手动维护，提高使用效率，同时保证网络访问稳定可靠。    </div>
 </div>
 <div class="panel panel-default mt-5">
     <div class="panel-heading">
@@ -425,16 +425,16 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
     </div>
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
-                        <li class="py-2"><a href="/free-nodes/2026-5-4-clash-verge-rev-github.htm" title="免费Clash节点 | 5月4日22.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 5月4日22.1M/S|免费Shadowrocket节点/SSR节点/Singbox节点/Clash节点/V2ray节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-24-clash-verge-rev-node-share.htm" title="免费Clash节点 | 4月24日22.8M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月24日22.8M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-5-clash-verge-rev-node-share.htm" title="免费Clash节点 | 5月5日22.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 5月5日22.4M/S|免费SSR节点/Clash节点/Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-2-clash-node-daily-updates.htm" title="免费Clash节点 | 5月2日20M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 5月2日20M/S|免费Clash节点/SSR节点/V2ray节点/Trojan节点/Singbox节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-7-clash-verge-rev-windows.htm" title="免费Clash节点 | 5月7日21.7M/S|免费Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 5月7日21.7M/S|免费Clash节点/Trojan节点/Singbox节点/Shadowrocket节点/V2ray节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-30-clash-stash-node.htm" title="免费Clash节点 | 4月30日19.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月30日19.9M/S|免费Shadowrocket节点/Trojan节点/Singbox节点/V2ray节点/Clash节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-28-clash-node.htm" title="免费Clash节点 | 4月28日19.4M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月28日19.4M/S|免费V2ray节点/Trojan节点/Singbox节点/Clash节点/SSR节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-12-clash-node-daily-updates.htm" title="免费Clash节点 | 4月12日21M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月12日21M/S|免费V2ray节点/Shadowrocket节点/Trojan节点/Clash节点/SSR节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-10-node-share.htm" title="免费Clash节点 | 5月10日22.8M/S|免费Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 5月10日22.8M/S|免费Trojan节点/Clash节点/Singbox节点/SSR节点/Shadowrocket节点/V2ray节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-26-free-node-subscribe.htm" title="免费Clash节点 | 4月26日22.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月26日22.8M/S|免费Trojan节点/Shadowrocket节点/Clash节点/SSR节点/V2ray节点/Singbox节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-10-clash-verge-rev-nodes.htm" title="免费Clash节点 | 4月10日21.6M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月10日21.6M/S|免费Shadowrocket节点/V2ray节点/Trojan节点/Singbox节点/SSR节点/Clash节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-25-clash-v2ray-ss-ssr.htm" title="免费Clash节点 | 4月25日18M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月25日18M/S|免费SSR节点/Trojan节点/Clash节点/Singbox节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-16-clash-verge-rev-windows.htm" title="免费Clash节点 | 4月16日19.6M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月16日19.6M/S|免费Clash节点/Singbox节点/V2ray节点/Shadowrocket节点/Trojan节点/SSR节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-4-24-clash-verge-rev-node-share.htm" title="免费Clash节点 | 4月24日22.8M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月24日22.8M/S|免费Singbox节点/SSR节点/Clash节点/V2ray节点/Shadowrocket节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                         <li class="py-2"><a href="/free-nodes/2026-4-23-clash-verge-rev-node.htm" title="免费Clash节点 | 4月23日22.3M/S|免费Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月23日22.3M/S|免费Singbox节点/Clash节点/Trojan节点/V2ray节点/SSR节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-4-13-clash-v2ray-ss-ssr.htm" title="免费Clash节点 | 4月13日18.6M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 4月13日18.6M/S|免费V2ray节点/Clash节点/Singbox节点/Shadowrocket节点/SSR节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
-                        <li class="py-2"><a href="/free-nodes/2026-5-6-clash-stash.htm" title="免费Clash节点 | 5月6日19.1M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 5月6日19.1M/S|免费Singbox节点/SSR节点/Shadowrocket节点/V2ray节点/Clash节点/Trojan节点机场推荐，在线Clash机场梯子购买推荐</a></li>
+                        <li class="py-2"><a href="/free-nodes/2026-5-9-clash-verge-rev-node-share.htm" title="免费Clash节点 | 5月9日22.3M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐">免费Clash节点 | 5月9日22.3M/S|免费Singbox节点/SSR节点/Clash节点/Trojan节点/V2ray节点/Shadowrocket节点机场推荐，在线Clash机场梯子购买推荐</a></li>
                     </ul>
     </div>
 </div>
@@ -446,10 +446,10 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
     <div class="panel-body">
         <ul class="p-0 x-0" style="list-style: none;margin: 0;padding: 0;">
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">10</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
+                <h4><span class="badge" style="float: right;">11</span> <a href="/date/2026-05/" title="2026-05 归档">2026-05</a></h4>
             </li>
                         <li class="py-2">
-                <h4><span class="badge" style="float: right;">22</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
+                <h4><span class="badge" style="float: right;">19</span> <a href="/date/2026-04/" title="2026-04 归档">2026-04</a></h4>
             </li>
                     </ul>
     </div>
